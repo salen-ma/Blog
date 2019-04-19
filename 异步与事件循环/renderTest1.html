@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div">
+      begin
+    </div>
+    <script>
+      window.onload = function () {
+        div.innerHTML = 'end';
+
+        setTimeout(function() {
+          // 应该是这里执行前开始渲染ui，试试用alert阻塞下。
+          alert(' ui 已经渲染完毕了吗？ ');
+          console.log('timeout1');
+        }, 0);
+
+        new Promise(function(resolve) {
+          console.log('promise1');
+          for (var i = 0; i < 1000; i++) {
+            i == 99 && resolve();
+          }
+          console.log('promise2');
+        }).then(function() {
+          console.log('then1');
+          alert(' ui 开始渲染 ');
+        });
+
+        console.log('global1');
+      }
+
+    </script>
+  </body>
+</html>
