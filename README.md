@@ -11,3 +11,5 @@
 [执行环境作用域及闭包](https://github.com/salen-ma/Blog/issues/2)
 
 [异步与事件循环](https://github.com/salen-ma/Blog/issues/3)
+
+[自己实现一个Promise](https://github.com/salen-ma/Blog/issues/4)
