@@ -13,3 +13,6 @@
 [异步与事件循环](https://github.com/salen-ma/Blog/issues/3)
 
 [自己实现一个Promise](https://github.com/salen-ma/Blog/issues/4)
+
+[nginx简单配置](https://github.com/salen-ma/Blog/issues/5)
+
